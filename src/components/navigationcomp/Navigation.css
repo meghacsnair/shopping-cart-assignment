@@ -1,0 +1,42 @@
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 1px 1px 1px #ddcccc;
+    height: 6rem;
+    display:flex;
+    
+}
+.navPage{
+    position:absolute;
+    top:6rem;
+}
+
+.nav-bar .navlink{
+    color:black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar .navlink:hover{
+    font-size: 18px;
+    color: rgb(240, 9, 98);
+    transition: 0.2s font-size;
+    
+}
+.nav-bar .active{
+    color: rgb(240, 9, 98);
+}
+.navlink img{width:80%;}
+.rightnav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:10px;
+    top:calc(3rem - 10px);
+}
+.rightnav .navlink{
+    padding:0px 20px;
+}
