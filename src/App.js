@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import SignUp from './Pages/Signup';
 import Products from './Pages/Products';
 import Navigation from './components/navigationcomp/Navigation';
+import ProductList from './components/productslist/ProductList';
 function App() {
   return (
     <div className="App">
@@ -17,10 +18,12 @@ function App() {
       <Route path="/" element={<Navigation/>}>
       <Route index element={<Home />} />
       <Route path='/home'  element={<Home />} />
-      <Route path="/cart" element={<Cart/>} ></Route>
+     
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<SignUp/>}></Route>
-      <Route path="/products" element={<Products/>}></Route>
+      <Route path="/products" element={<Products/>}>
+      <Route path="/products/:id" element={<ProductList />}></Route>
+      </Route>
       </Route>
       </Routes>
      </BrowserRouter>

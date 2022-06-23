@@ -1,0 +1,50 @@
+.product-list{
+    width: 75%;
+    position: absolute;
+    right: 0;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+.product-list .product-card{
+    width: 22%;
+    position: relative;
+    margin: 1.25%;
+    box-shadow: 1px 0.5px 3px 0px lightgrey;
+    border-radius: 10px;
+    padding:5px;
+}
+.product-card img{
+    max-width: 80%;
+}
+.product-card p:first-child{
+    font-weight: 900;
+    text-align: left;
+    height:96px;
+}
+.buyOut span{
+   font-size:14px;
+   font-weight:700;
+
+}
+.buyOut{
+    text-align:left;
+}
+.buyOut button{
+    float: right;
+    border: none;
+    color: white;
+    background-color: rgb(196, 11, 73);
+    padding: 6px;
+    line-height: 14px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+p.prodDesc {
+    font-size: 14px;
+    text-align: left;
+    background-color: #eeeeee;
+    height: 110px;
+    overflow: hidden;
+}

@@ -5,11 +5,12 @@
     box-shadow: 1px 1px 1px #ddcccc;
     height: 6rem;
     display:flex;
-    
+    background-color: white;
 }
 .navPage{
     position:absolute;
     top:6rem;
+    width:100%;
 }
 
 .nav-bar .navlink{

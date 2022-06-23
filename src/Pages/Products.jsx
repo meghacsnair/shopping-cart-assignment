@@ -1,4 +1,9 @@
+import { useParams } from "react-router";
+import ProductCategory from "../components/productsidenav/ProductCategory";
+
 const Products = () =>{
-    return <div>This is Products Page</div>
+    const param = useParams();
+    
+    return <ProductCategory/>
 }
 export default Products;

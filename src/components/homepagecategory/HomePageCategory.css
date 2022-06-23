@@ -1,0 +1,20 @@
+.categoryImg{
+    max-width:60%
+}
+.homeCategory{
+    width:80%;
+    
+    margin:0 auto;
+    padding:50px 0px;
+}
+.homeCategory button{
+    border: none;
+    color: white;
+    background-color: rgb(196, 11, 73);
+    padding: 15px;
+    line-height: 16px;
+    font-size: 16px;
+    
+    justify-content: center;
+    align-items: center;
+}

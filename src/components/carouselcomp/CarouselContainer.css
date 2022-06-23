@@ -1,0 +1,10 @@
+.carousel-item img{
+    width:80%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color: rgb(200, 199, 199);
+    height: 40%;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: grey;
+}

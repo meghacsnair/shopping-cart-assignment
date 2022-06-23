@@ -8,11 +8,11 @@ const Navigation = () =>{
         <div className='nav-bar'>
         <NavLink to="/" className='navlink'><img src={logo} alt="logo"/></NavLink>
         <div className='rightnav'>
-        <NavLink to="/" activeclassName="active" className='navlink'>Home</NavLink>
-        <NavLink to="/products" activeclassName="active" className='navlink'>Products</NavLink>
-        <NavLink to="/signup" activeclassName="active" className='navlink'>Register</NavLink>
-        <NavLink to="/login" activeclassName="active" className='navlink'>Login</NavLink>
-        <NavLink to="/cart" activeclassName="active" className='navlink'>Cart</NavLink>
+        <NavLink to="/" activeclassname="active" className='navlink'>Home</NavLink>
+        <NavLink to="/products/allProducts" activeclassname="active" className='navlink'>Products</NavLink>
+        <NavLink to="/signup" activeclassname="active" className='navlink'>Register</NavLink>
+        <NavLink to="/login" activeclassname="active" className='navlink'>Login</NavLink>
+        <NavLink to="/cart" activeclassname="active" className='navlink'>Cart</NavLink>
         </div>
         </div>
         <div className='navPage'>
