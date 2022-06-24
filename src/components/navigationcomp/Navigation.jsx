@@ -3,7 +3,14 @@ import logo from '../../images/logo.png';
 import { Outlet } from 'react-router';
 import React from 'react';
 import  './Navigation.css';
-const Navigation = () =>{
+import { useSelector } from "react-redux";
+const Navigation = (props) =>{
+    const cartitems = useSelector(state=>state.cartItems);
+    const cartlength = cartitems.reduce((count,crt)=>{return count+=crt.cartQty},0);
+    const handleCartVisibility = () =>{
+       // debugger;
+        props.hideShowCart(!props.cartVisibility)
+    }
     return (<React.Fragment>
         <div className='nav-bar'>
         <NavLink to="/" className='navlink'><img src={logo} alt="logo"/></NavLink>
@@ -12,7 +19,7 @@ const Navigation = () =>{
         <NavLink to="/products/allProducts" activeclassname="active" className='navlink'>Products</NavLink>
         <NavLink to="/signup" activeclassname="active" className='navlink'>Register</NavLink>
         <NavLink to="/login" activeclassname="active" className='navlink'>Login</NavLink>
-        <NavLink to="/cart" activeclassname="active" className='navlink'>Cart</NavLink>
+        <button  className='navlink' onClick={handleCartVisibility}>Cart-{cartlength}</button>
         </div>
         </div>
         <div className='navPage'>

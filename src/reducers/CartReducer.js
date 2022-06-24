@@ -3,7 +3,7 @@ const CartReducer =(state=initialState,action)=>{
     switch (action.type){
         
         case "ADD_TO_CART": {
-            debugger;
+            //debugger;
             let tempState = [...state];
             let index = tempState.findIndex(arr=>arr.id===action.payload.id)
             if(index>-1){
@@ -12,7 +12,7 @@ const CartReducer =(state=initialState,action)=>{
                 action.payload["cartQty"]=1;
                 tempState.push(action.payload)
             }
-            console.log(tempState)
+           
             return tempState;
         }
        
@@ -24,7 +24,7 @@ const CartReducer =(state=initialState,action)=>{
             }else{
                tempState.splice(index,1);
             }
-            console.log(tempState)
+          
             return tempState;
         }
        

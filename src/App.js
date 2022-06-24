@@ -3,19 +3,21 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import {Outlet, Route,Routes} from 'react-router';
 import Home from './Pages/Home';
-import Cart from './Pages/Cart';
+import Cart from './components/cartcomponent/Cart';
 import Login from './Pages/Login';
 import SignUp from './Pages/Signup';
 import Products from './Pages/Products';
 import Navigation from './components/navigationcomp/Navigation';
 import ProductList from './components/productslist/ProductList';
+import { useState } from 'react';
 function App() {
+  const [cartShown,setCartShown] = useState(false);
   return (
     <div className="App">
-    
+      <Cart hideShowCart={setCartShown} cartVisibility={cartShown} />
      <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Navigation/>}>
+      <Route path="/" element={<Navigation hideShowCart={setCartShown} cartVisibility={cartShown}/>}>
       <Route index element={<Home />} />
       <Route path='/home'  element={<Home />} />
      
