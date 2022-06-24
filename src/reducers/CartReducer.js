@@ -18,7 +18,7 @@ const CartReducer =(state=initialState,action)=>{
        
         case "REMOVE_FROM_CART": {
             let tempState = [...state];
-            let index = tempState.findIndex(arr=>arr.id===action.item.id)
+            let index = tempState.findIndex(arr=>arr.id===action.payload.id)
             if(tempState[index].cartQty>1){
                 tempState[index].cartQty =  tempState[index].cartQty-1;
             }else{

@@ -1,0 +1,16 @@
+label.inputlabel{
+    display: block;
+    color: #13c5b4;
+   padding:10px 0px;
+    font-size: 14px;
+    text-align:left;
+}
+input.inputComponent{
+    border: none;
+    border-bottom: 1.5px solid #13c5b4;
+    font-size:16px;
+}
+.inputHolder{
+    width:100%;
+    margin: 20px auto;
+}
