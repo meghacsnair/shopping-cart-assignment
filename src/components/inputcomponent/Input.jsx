@@ -1,4 +1,4 @@
-import './Input.css';
+
 const Input = ()=>{
     return (<div className="inputHolder">
         <label className="inputlabel">Input type</label>

@@ -1,5 +1,5 @@
 .carousel-item img{
-    width:80%;
+    width:100%;
 }
 .carousel-control-prev-icon,.carousel-control-next-icon{
     background-color: rgb(200, 199, 199);
@@ -7,4 +7,9 @@
 }
 .carousel-indicators [data-bs-target]{
     background-color: grey;
+}
+.carousel{
+    -webkit-box-shadow: 0 8px 6px -6px #d1cdd1;
+    -moz-box-shadow: 0 8px 6px -6px #d1cdd1;
+         box-shadow: 0 8px 6px -6px #d1cdd1;
 }

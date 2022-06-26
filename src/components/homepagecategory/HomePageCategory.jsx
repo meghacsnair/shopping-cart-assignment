@@ -17,7 +17,7 @@ const HomePageCategory = () => {
             {categories.filter(ctegory=>ctegory.order>-1).map((ctg, i) => {
                 if (ctg.order > -1) {
                     if (i % 2 === 0) {
-                        return (<li key={i} className="row homeCategory">
+                        return (<li key={i} className="homeCategory">
                             <div className="col-md-6">
                                 <img src={ctg.imageUrl} className="categoryImg" alt="Beverages" />
                             </div>
@@ -28,7 +28,7 @@ const HomePageCategory = () => {
                             </div>
                         </li>)
                     } else {
-                        return (<li key={i} className="row homeCategory">
+                        return (<li key={i} className="homeCategory">
                             <div className="col-md-6">
                                 <p>{ctg.name}</p>
                                 <p>{ctg.description}</p>

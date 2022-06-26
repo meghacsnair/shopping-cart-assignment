@@ -13,14 +13,17 @@ const Navigation = (props) =>{
     }
     return (<React.Fragment>
         <div className='nav-bar'>
-        <NavLink to="/" className='navlink'><img src={logo} alt="logo"/></NavLink>
-        <div className='rightnav'>
-        <NavLink to="/" activeclassname="active" className='navlink'>Home</NavLink>
-        <NavLink to="/products/allProducts" activeclassname="active" className='navlink'>Products</NavLink>
-        <NavLink to="/signup" activeclassname="active" className='navlink'>Register</NavLink>
-        <NavLink to="/login" activeclassname="active" className='navlink'>Login</NavLink>
-        <button  className='navlink' onClick={handleCartVisibility}>Cart-{cartlength}</button>
-        </div>
+       <div className='widthNav'>
+       <NavLink to="/" className='navlink'><img src={logo} alt="logo"/></NavLink>
+       <div className='rightnav'>
+       <NavLink to="/" activeclassname="active" className='navlink'>Home</NavLink>
+       <NavLink to="/products/allProducts" activeclassname="active" className='navlink'>Products</NavLink>
+       <div>
+       <NavLink to="/login" activeclassname="active" className='navlink'>Sign in</NavLink>
+       <NavLink to="/signup" activeclassname="active" className='navlink'>Register</NavLink>
+       
+       <button  className='navlink' onClick={handleCartVisibility}><img src="/static/images/cart.svg" alt="cart" style={{width:"2rem"}}/>{cartlength} items</button></div>
+       </div></div>
         </div>
         <div className='navPage'>
         <Outlet /></div>

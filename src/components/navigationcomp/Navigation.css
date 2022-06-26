@@ -10,7 +10,8 @@
 .navPage{
     position:absolute;
     top:6rem;
-    width:100%;
+    width:80%;
+    left:10%;
 }
 
 .nav-bar .navlink{
@@ -29,15 +30,68 @@
 .nav-bar .active{
     color: rgb(240, 9, 98);
 }
-.navlink img{width:80%;}
+.navlink img{width:auto;}
 .rightnav{
-    display:flex;
-    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
     position: absolute;
-    right:10px;
-    top:calc(3rem - 10px);
+    right: 10px;
+    top: 0px;
+    width: 70%;
+    height: 100%;
 }
 .rightnav .navlink{
     padding:0px 20px;
+}
+.widthNav{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    position:relative;
+}
+.widthNav > a:first-child{
+    width: 20%;
+    display: block;
+}
+.rightnav > div{
+    position: absolute;
+    right: 0px;
+    height:100%;
+}
+.rightnav > div > a{
+    display: inline-block !important;
+    margin: 10px 0px;
+    font-size: 12px !important;
+    font-weight: 600;
+    padding: 0 0 0 20px !important;
+}
+button.navlink{
+    border: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px !important;
+}
+@media screen and (max-width:1200px) {
+    .navPage,.widthNav{
+        width:100%;
+        left:0px;
+    }
+}
+@media screen  and (max-width:1000px){
+    .rightnav > a:first-child,.rightnav > a:nth-child(2){
+        display:none;
+    }
+    .widthNav > a:first-child {
+        width: 20%;
+        display: flex;
+    }
+    .navlink img{width:100%;}
+    .nav-bar{
+        height:4rem
+    }
+    button.navlink{
+        padding:3px !important;
+    }
 }

@@ -4,6 +4,7 @@ import CarouselReducer from "./CarouselReducer";
 import CartReducer from "./CartReducer";
 import CategoryReducer from "./CategoryReducer";
 import ProductReducer from "./ProductReducer";
+
 // import categoryReducer from "./categoryReducer";
 // import { productsReducer } from "./productsReducer";
 // import { cartReducer } from "../reducers/addtocartReducer";
