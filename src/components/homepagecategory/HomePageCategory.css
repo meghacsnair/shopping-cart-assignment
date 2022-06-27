@@ -9,6 +9,8 @@
     -webkit-box-shadow: 0 8px 6px -6px #d1cdd1;
        -moz-box-shadow: 0 8px 6px -6px #d1cdd1;
             box-shadow: 0 8px 6px -6px #d1cdd1;
+            list-style-type:none;
+            display:flex;
 }
 .homeCategory button{
     border: none;

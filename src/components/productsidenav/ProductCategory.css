@@ -1,7 +1,7 @@
 .sideNav{
     position: fixed;
     background-color: #e4e2e2;
-    width: 25%;
+    width: 16%;
     height: calc(100vh - 6rem);
 }
 .sideNav a{
@@ -11,8 +11,8 @@
     width: 100%;
     border: none;
     background-color: inherit;
-    padding: 10px 0 10px 40px;
-    border-bottom:  1px solid #c2bebe;
+    padding: 5% 5% 5% 10%;
+    border-bottom: 1px solid #c2bebe;
     text-align: left;
 }
 .sideNav a button.active{

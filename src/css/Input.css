@@ -1,0 +1,52 @@
+.inputHolder {
+    margin: 15px;
+    border-bottom: 2px solid turquoise;
+}
+.inputlabel{
+    display: block;
+    text-align: left;
+    color: turquoise;
+    font-size: 12px;
+}
+.inputComponent{
+    border: none;
+    padding: 8px 0px;
+    width: 100%;
+    outline: none;
+}
+.signup{
+    display:flex;
+    text-align: left;
+}
+.signup>div{
+    width:40%;
+}
+.signup>div:first-child{
+    width:60%;
+    padding:50px
+}
+.signup>div:first-child > h1{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+form button{
+    border: none;
+    color: white;
+    background-color: rgb(196, 11, 73);
+    padding: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    margin: 15px;
+}
+form p{
+    color: red;
+    padding: 0px 15px;
+    font-weight: 400;
+    font-size: 12px;
+
+}

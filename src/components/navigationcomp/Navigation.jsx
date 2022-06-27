@@ -27,6 +27,7 @@ const Navigation = (props) =>{
         </div>
         <div className='navPage'>
         <Outlet /></div>
+        <footer>Copyright 2011-2018 Sabka bazaar Grocery shopping pvt Ltd</footer>
         
     </React.Fragment>)
 }

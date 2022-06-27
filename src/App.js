@@ -14,8 +14,9 @@ function App() {
   const [cartShown,setCartShown] = useState(false);
   return (
     <div className="App">
-      <Cart hideShowCart={setCartShown} cartVisibility={cartShown} />
+      
      <BrowserRouter>
+     <Cart hideShowCart={setCartShown} cartVisibility={cartShown} />
       <Routes>
       <Route path="/" element={<Navigation hideShowCart={setCartShown} cartVisibility={cartShown}/>}>
       <Route index element={<Home />} />

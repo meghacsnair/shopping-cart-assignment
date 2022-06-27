@@ -53,7 +53,7 @@
 .cartName{
     font-weight:700;
 }
-.cartDiv li button,.checkOut{
+.cartDiv li button,.checkOut,.emptyCart button{
     background-color: rgb(226, 45, 75);
     margin: 10px;
     border: none;
@@ -82,7 +82,7 @@
     margin-right: 5%;
     width: 20%;
 }
-.checkOut{
+.checkOut,.emptyCart button{
     margin: 10px;
     width: calc(100% - 20px);
     padding: 15px;
@@ -94,4 +94,15 @@
 }
 .checkOut span{
     float:right;
+}
+.emptyCart{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    height: calc(100vh - 6rem);
+}
+.emptyCart h1{
+    font-size: 22px;
+    margin-top: 5rem;
 }
